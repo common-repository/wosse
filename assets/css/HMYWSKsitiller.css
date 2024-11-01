@@ -1,0 +1,297 @@
+@charset "UTF-8";
+label[for="sozlesmeOnayi1_id"], label[for="sozlesmeOnayi2_id"], label[for="sozlesmeOnayi3_id"], label[for="sozlesmeOnayi_id"]{
+    padding-left: 15px !important;
+	display: initial  !important;
+	
+}
+
+.form-table th{
+	width:230px  !important;
+	
+}
+
+
+/*MODAL İLE İLGİLİ CSSLER*/
+.HMY_checkbox_div{
+	
+}
+
+.HMYWSK_modal_div{
+	
+	background-color:RGBA(240,240,255,0.7);
+	position:fixed;
+	z-index:999;
+	width:100%;
+	Height:100%;
+	top:-2000px;
+	transition:all 0.5s;
+	
+}
+
+
+
+.HMYWP_Modal_Ac{
+	top:1px;	
+}
+
+.HMYWP_Modal_Kapa{
+	top:-2000px;	
+}
+
+/*Bu buton Modal açılınca gelen X işareti*/
+#HMYWP_Modal_Butonu{
+	
+    top: 14px;
+    position: absolute;
+    font: 16px arial;
+    right: 10px;
+    font-weight: bold;
+    color: #B22;
+    float: right;
+    margin-right: 0px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+#HMYWP_Modal_Butonu:hover{
+	font: 18px arial;
+	
+}
+
+#HMYWP_Modal_Butonu:after{
+	content:" Kapat";
+	padding-left:5px !important;
+}
+
+
+.HMYWSK_modal_section{
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	overflow: hidden;
+	max-height: 70%;
+	overflow-y: scroll;
+	width: 70%;
+	box-shadow: 1px 12px #eee, 1px 15px #888;
+
+}
+
+
+#modalBaslik{
+	font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+    color: #A22;
+    font-size: 25px;
+    padding: 5px;
+    box-shadow: 1px 4px 1px #888;
+    margin-bottom: 0px;
+    width: 70%;
+    height: 45px;
+	margin-top: -45px;
+    position: fixed;
+}
+
+
+.HMYWSK_modal_section #modalIcerik{
+	
+    background-color: #FFF;
+    color: #111;
+    padding: 20px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top:20px;
+    clear: both;
+    margin-bottom: 0px;
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    height: 98% !important;
+}
+
+
+
+
+
+
+
+
+
+
+/*Admin panelindeki SEKME ELEMANLARI css*/
+.adminSekmeTasiyici{
+	margin:25px 20px 0 2px;	
+}
+.adminSekmeBaslik{
+	width:100%;
+	margin:10px 0px 0px 0px;
+	list-style-type:none;
+	float:left;
+	position: relative;
+	z-index: 990;
+	border:1px solid #ddd;
+	border-bottom:1px solid #fff;
+	
+}
+
+.adminSekmeBaslik li{
+	float:left;
+	background-color:transparent;
+	margin-bottom:0px;
+	padding: 0;
+	line-height: 26px;
+	font-weight: 700;
+	font-size: 14px;
+	border:1px solid #ddd;
+	
+}
+
+.adminSekmeBaslik li.aktif{
+	border-bottom-color:#fff !important;
+	
+}
+
+.adminSekmeBaslik li a{
+	padding:10px;
+	border:1px solid transparent;
+	border-radius:5px 5px 0 0;
+	float:left;
+	text-decoration:none;
+}
+
+.adminSekmeBaslik li a:hover{
+	border-color:#eee #eee #ddd;
+}
+
+.adminSekmeBaslik li.aktif a,
+.adminSekmeBaslik li.aktif a:hover,
+.adminSekmeBaslik li.aktif a:focus{
+	color:#555;
+	cursor:pointer;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom-color:transparent;
+}
+
+.sekmeIcerik{ 
+	clear:both;
+	border:1px solid #ddd;
+	top: -2px;
+	position: relative;
+	z-index: 880;
+}
+
+.sekmeIcerik .icerik{
+	display:none;
+	width:auto;
+	
+}
+
+
+.sekmeIcerik .icerik.aktif {
+	display:block;
+	padding:10px;
+	background-color:#fff;
+	box-shadow:0 1px 4px -2px rgba(0,0,0,0.15);
+	
+}
+
+.sekmeIcerik .icerik iframe{
+	
+	min-height:350px;
+}
+
+
+
+
+
+
+/*Admin panelindeki FORM ELEMANLARININ BİLGİ KUTUCUKLARININ css*/
+.HMYgorev_tanim_class{
+	margin: 0px 3px;
+    font-size: 18px;
+    padding: 0px;
+    line-height: initial;
+    cursor: help;
+	z-index:999;
+	
+	
+}
+
+.HMYgorev_tanim_class:hover{color: #f86822;}
+
+
+.HMYgorev_tanim_class p{
+	
+	padding:0px;
+    background-color: #ddeeFF;
+    margin:0px 0px 0px 15px;
+    width: 0px!important;
+    height: 0px!important;
+    position: absolute;
+	z-index:999;
+    border-width: 0px;
+    border-radius:0px 5px 5px 5px;
+	overflow:hidden;
+	text-align: justify;
+	line-height: 1.3;
+	transition:all 0.2s;
+}
+
+.HMYgorev_tanim_class:hover p{
+	width:400px!important;
+	height: max-content!important;
+	height:auto !important;
+	max-width:400px;
+	padding: 0px 5px 5px 5px;
+	border: 1px solid #139ddf;
+	
+}
+
+
+
+/*Admin panelindeki kısa kodların sitili*/
+#kisaKodListesiCerceve{
+	position: -webkit-sticky;
+	position: sticky;
+	top:20px;
+	background-color: #f1f1f1;
+	padding: 5px 2px;
+	z-index: 9999;
+}
+
+
+.kisaKodKopya{
+	cursor:pointer;
+	margin-left:5px;
+}
+
+.kisaKodKopya:active{
+	color:#30a5eb;
+	font-size: 8pt;
+}
+
+@keyframes gorunKaybolAnime {
+  0% {height:40px; opacity:1;}
+  75% {height:40px; opacity:1;}
+  100% {height:0px;opacity:0;}
+}
+
+#kisaKodKopyaMesaj{
+	height:0px;
+	opacity:0;
+	width:320px;
+	position: absolute;
+	right:10px;
+	
+}
+
+.gorunKaybol{
+	  animation: gorunKaybolAnime 1s 1;
+}
+
+
